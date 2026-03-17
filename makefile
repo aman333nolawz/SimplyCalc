@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -std=c99 -O2
 LIB = libsimplycalc.a
-SRCS = simplycalc.c
+SRCS = simplycalc.c derivative.c parse.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean install uninstall
@@ -27,4 +27,3 @@ install: $(LIB)
 uninstall:
 	sudo rm -f /usr/local/include/simplycalc.h /usr/local/lib/$(LIB)
 	sudo ldconfig
-
