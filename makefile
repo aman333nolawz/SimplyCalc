@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -std=c99 -O2
 LIB = libsimplycalc.a
-SRCS = simplycalc.c derivative.c parse.c
+SRCS = drvt.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all clean install uninstall

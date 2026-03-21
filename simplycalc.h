@@ -1,6 +1,7 @@
 #ifndef SIMPLYCALC_H
 #define SIMPLYCALC_H
+#include "parsefunc.h"
 
-double drvt(func f, int order, double value);
+func drvt(func f, int order);
 
 #endif
