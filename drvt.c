@@ -12,11 +12,10 @@ int factorial(int n){
 
 func drvt(func f, int order){
   if (f.type == 0){
-    for (int j = 0; j < order; j++){
-      for (int i = 0; i < sizeof(f.params)-1; i++){
-        f.params[i] = f.params[i+1] * i;
-      }
+    for (int i = 0; i < (f.buffer - 1); i++){
+      f.params[i] = f.params[i+1] * (i+1);
     }
+    f.buffer -= 1;
   }
   return f;
 }
