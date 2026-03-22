@@ -18,5 +18,14 @@ sudo make install # for global install
 
 ## Implementing and Running Scripts
 ```bash
-gcc file_name.c -lsimplycalc -o output_file_name
+gcc file_name.c -lsimplycalc -lparsefunc -lmathobj -lm -o output_file_name
 ```
+
+## WTH IS ALGEB-CALC FOLDER
+
+Its just a folder for starting with simplycalc quickly. Holds an basic script with corresponding makefile.
+
+
+# Parse Func
+
+please go show my other project which is a dependency to this one [parse_func](https://github.com/CodeFromKerala/parse_func). PLEASE LET ME KNOW IF ANYTHING BREAKS ID BE HAPPY TO HELP :P
